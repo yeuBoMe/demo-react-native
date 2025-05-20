@@ -36,6 +36,22 @@ const styles = StyleSheet.create({
     alignItems: "center",
     marginRight: 10,
   },
+  cartBadge: {
+    position: "absolute",
+    top: -5,
+    right: -5,
+    backgroundColor: "#FF8C42",
+    borderRadius: 10,
+    width: 18,
+    height: 18,
+    alignItems: "center",
+    justifyContent: "center",
+  },
+  cartBadgeText: {
+    color: "#fff",
+    fontSize: 10,
+    fontWeight: "bold",
+  },
   smallAvatar: {
     width: 30,
     height: 30,

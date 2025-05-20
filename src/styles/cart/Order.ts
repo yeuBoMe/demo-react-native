@@ -9,11 +9,11 @@ const styles = StyleSheet.create({
     flexDirection: "row",
     justifyContent: "space-between",
     alignItems: "center",
-    paddingHorizontal: 20,
-    paddingVertical: 15,
-    backgroundColor: "#fff",
-    borderBottomWidth: 1,
-    borderBottomColor: "#E0E0E0",
+    paddingHorizontal: 25,
+    marginTop: 30,
+    marginBottom: 12,
+    // borderWidth: 1,
+    // borderColor: "green"
   },
   backButton: {
     width: 30,
@@ -25,7 +25,7 @@ const styles = StyleSheet.create({
   },
   headerText: {
     position: "absolute",
-    left: "50%",
+    left: "32%",
     transform: [{ translateX: -45 }],
     fontSize: 18,
     fontWeight: "bold",

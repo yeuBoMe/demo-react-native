@@ -4,10 +4,14 @@ import styles from '../../styles/user/Profile';
 import { TabParamList } from '../../types/route';
 import { NavigationProp, RouteProp, useNavigation, useRoute } from "@react-navigation/native";
 import { useAuth } from '../../contexts/AuthContext';
+import { useCart } from "../../contexts/CartContext"; // Import useCart
+import PaymentScreen from "../cart/Payment";
+
 
 const ProfileScreen = () => {
     const navigation = useNavigation<NavigationProp<TabParamList, "Profile">>();
     const { user } = useAuth();
+    const { cartItems } = useCart(); // Lấy cartItems từ CartContext
 
     return (
         <SafeAreaView style={{ flex: 1 }}>
@@ -33,6 +37,11 @@ const ProfileScreen = () => {
                                 onPress={() => navigation.navigate("Order")}
                             >
                                 <Ionicons name="cart-outline" size={21} color="#333" />
+                                <View style={styles.cartBadge}>
+                                    <Text style={styles.cartBadgeText}>
+                                        {cartItems.length} {/* Hiển thị số lượng sản phẩm */}
+                                    </Text>
+                                </View>
                             </TouchableOpacity>
                             <TouchableOpacity onPress={() => navigation.navigate("Profile")}>
                                 <Image
@@ -52,7 +61,7 @@ const ProfileScreen = () => {
                             />
                             <View style={{ marginLeft: 10, marginBottom: 15 }}>
                                 <Text style={styles.name}>{user ? user.name : "Guest"}</Text>
-                                <Text style={styles.location}>Maple Ave, New York</Text>
+                                <Text style={styles.location}>{user?.address || "No address provided"}</Text>
                             </View>
                         </View>
                         <TouchableOpacity
@@ -72,6 +81,14 @@ const ProfileScreen = () => {
                     >
                         <Feather name="clock" size={20} style={styles.menuIcon} />
                         <Text style={styles.menuLabel}>Order History</Text>
+                        <Feather name="chevron-right" size={20} color="black" style={styles.menuArrow} />
+                    </TouchableOpacity>
+                    <TouchableOpacity
+                        style={styles.menuItem}
+                        onPress={() => navigation.navigate('Payment')}
+                    >
+                        <Feather name="clock" size={20} style={styles.menuIcon} />
+                        <Text style={styles.menuLabel}>Payment</Text>
                         <Feather name="chevron-right" size={20} color="black" style={styles.menuArrow} />
                     </TouchableOpacity>
                     <TouchableOpacity

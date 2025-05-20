@@ -7,9 +7,10 @@ import { TouchableWithoutFeedback } from 'react-native';
 import { Keyboard } from 'react-native';
 import { useState } from 'react';
 import PopUp from '../../components/modal/Modal';
-import { useAuth } from '../../contexts/AuthContext'; // path chỉnh lại cho đúng với project bạn
+import { useAuth } from '../../contexts/AuthContext';
 import AsyncStorage from '@react-native-async-storage/async-storage';
 import * as ImagePicker from 'expo-image-picker';
+import { useCart } from '../../contexts/CartContext';
 
 const EditScreen = () => {
     const navigation = useNavigation<NavigationProp<RootStackParamList, "Edit">>();
@@ -18,7 +19,10 @@ const EditScreen = () => {
     const [name, setName] = useState(user?.name || '');
     const [email, setEmail] = useState(user?.username || '');
     const [password, setPassword] = useState(user?.password ?? '');
+    const [address, setAddress] = useState(user?.address || '');
     const [avatar, setAvatar] = useState(user?.avatar || null);
+    const { cartItems } = useCart();
+
     const handleUpdateProfile = async () => {
         if (!user) return;  // không làm gì nếu chưa đăng nhập
 
@@ -28,9 +32,8 @@ const EditScreen = () => {
             name,
             username: email,
             password,
-            avatar
-            // phone,
-            // gender
+            avatar,
+            address,
         };
 
         try {
@@ -45,8 +48,7 @@ const EditScreen = () => {
             // Cập nhật state trong context (để Profile tự động render lại)
             setUser(updatedUser);
 
-            // Hiển thị thông báo thành công
-            Alert.alert("Success", "Profile updated successfully!");
+            setModalVisible(true);
 
         } catch (error) {
             console.error("Error updating user", error);
@@ -72,12 +74,7 @@ const EditScreen = () => {
         if (!result.canceled && result.assets && result.assets.length > 0) {
             const selectedAsset = result.assets[0];
             setAvatar(selectedAsset.uri);  // Cập nhật ảnh đại diện
-
-            if (user) {
-                const updatedUser = { ...user, avatar: selectedAsset.uri };
-                setUser(updatedUser);
-            }
-        }        
+        }
     };
 
     return (
@@ -101,6 +98,11 @@ const EditScreen = () => {
                         onPress={() => navigation.navigate("Order")}
                     >
                         <Ionicons name="cart-outline" size={21} color="#333" />
+                        <View style={styles.cartBadge}>
+                            <Text style={styles.cartBadgeText}>
+                                {cartItems.length} {/* Hiển thị số lượng sản phẩm */}
+                            </Text>
+                        </View>
                     </TouchableOpacity>
                     <TouchableOpacity onPress={() => navigation.navigate("Main", { screen: "Profile" })}>
                         <Image
@@ -132,7 +134,13 @@ const EditScreen = () => {
                         value={name}
                         onChangeText={setName}
                     />
-
+                    <Text style={styles.label}>Address</Text>
+                    <TextInput
+                        placeholder="Fill your address"
+                        style={styles.input}
+                        value={address}
+                        onChangeText={setAddress}
+                    />
 
                     <Text style={styles.label}>E-mail</Text>
                     <TextInput
@@ -149,13 +157,6 @@ const EditScreen = () => {
                         value={password}
                         onChangeText={setPassword}
                     />
-
-
-                    {/* <Text style={styles.label}>Mobile Phone</Text>
-                    <TextInput placeholder="(63) 923 123 21312" style={styles.input} />
-
-                    <Text style={styles.label}>Gender</Text>
-                    <TextInput placeholder="(63) 923 123 21312" style={styles.input} /> */}
 
                     <TouchableOpacity
                         onPress={handleUpdateProfile}
