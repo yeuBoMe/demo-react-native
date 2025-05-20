@@ -8,11 +8,11 @@
     "category": "Fruit",
     "description": "Kiwi Shake II is a refreshing beverage crafted from ripe, juicy kiwis blended into a smooth, creamy shake. Packed with vibrant fruit flavor and a hint of sweetness, it's the perfect cool-down drink for any time of the day, ideal for kiwi lovers seeking a tropical treat.",
     "sizes": [
-      { "size": "32" },
-      { "size": "48" },
-      { "size": "59" },
-      { "size": "64" },
-      { "size": "96" }
+      { "size": "32", "price": 98.0 },
+      { "size": "48", "price": 110.0 },
+      { "size": "59", "price": 120.0 },
+      { "size": "64", "price": 130.0 },
+      { "size": "96", "price": 150.0 }
     ]
   },
   {
@@ -24,11 +24,11 @@
     "category": "Fruit",
     "description": "Blueberry Maze is a delightful drink bursting with the sweet-tart essence of fresh blueberries. Blended into a silky smoothie, this beverage offers a refreshing and flavorful experience, perfect for a quick hydration break or a fruity indulgence on the go.",
     "sizes": [
-      { "size": "32" },
-      { "size": "48" },
-      { "size": "59" },
-      { "size": "64" },
-      { "size": "96" }
+      { "size": "32", "price": 98.0 },
+      { "size": "48", "price": 110.0 },
+      { "size": "59", "price": 120.0 },
+      { "size": "64", "price": 130.0 },
+      { "size": "96", "price": 150.0 }
     ]
   },
   {
@@ -40,11 +40,11 @@
     "category": "Fruit",
     "description": "Mango Smoothie is a nourishing tropical delight made from succulent mangoes blended with creamy yogurt. This vibrant drink is both refreshing and satisfying, offering a burst of natural sweetness and a smooth texture, making it an excellent choice for a healthy, flavorful refreshment.",
     "sizes": [
-      { "size": "32" },
-      { "size": "48" },
-      { "size": "59" },
-      { "size": "64" },
-      { "size": "96" }
+      { "size": "32", "price": 110.0 },
+      { "size": "48", "price": 120.0 },
+      { "size": "59", "price": 130.0 },
+      { "size": "64", "price": 140.0 },
+      { "size": "96", "price": 160.0 }
     ]
   },
   {
@@ -56,11 +56,11 @@
     "category": "Fruit",
     "description": "Apple Juice is a crisp and invigorating drink made from freshly pressed apples. With its natural sweetness and clean, refreshing taste, this beverage is perfect for all ages, offering a wholesome and hydrating option for any meal or snack time.",
     "sizes": [
-      { "size": "32" },
-      { "size": "48" },
-      { "size": "59" },
-      { "size": "64" },
-      { "size": "96" }
+      { "size": "32", "price": 85.0 },
+      { "size": "48", "price": 95.0 },
+      { "size": "59", "price": 105.0 },
+      { "size": "64", "price": 115.0 },
+      { "size": "96", "price": 135.0 }
     ]
   },
   {
@@ -70,7 +70,12 @@
     "image": "../../assets/pats-burger.png",
     "source": "Jollibee",
     "category": "Burger",
-    "description": "Pats Burger is a mouthwatering classic featuring a juicy beef patty nestled in a soft bun, topped with fresh lettuce, ripe tomatoes, and a special house sauce. Its bold flavors and satisfying texture make it a go-to choice for burger enthusiasts craving a hearty meal."
+    "description": "Pats Burger is a mouthwatering classic featuring a juicy beef patty nestled in a soft bun, topped with fresh lettuce, ripe tomatoes, and a special house sauce. Its bold flavors and satisfying texture make it a go-to choice for burger enthusiasts craving a hearty meal.",
+    "sizes": [
+      { "size": "Small", "price": 134.0 },
+      { "size": "Medium", "price": 154.0 },
+      { "size": "Large", "price": 174.0 }
+    ]
   },
   {
     "id": "7",
@@ -79,7 +84,12 @@
     "image": "../../assets/cheese-burger.png",
     "source": "McDonald's",
     "category": "Burger",
-    "description": "Cheese Burger is a timeless favorite, combining a succulent beef patty with melted cheddar cheese, crisp pickles, onions, and a tangy ketchup-mustard duo, all served in a toasted bun. This iconic burger delivers a perfect balance of savory and zesty flavors."
+    "description": "Cheese Burger is a timeless favorite, combining a succulent beef patty with melted cheddar cheese, crisp pickles, onions, and a tangy ketchup-mustard duo, all served in a toasted bun. This iconic burger delivers a perfect balance of savory and zesty flavors.",
+    "sizes": [
+      { "size": "Small", "price": 150.0 },
+      { "size": "Medium", "price": 170.0 },
+      { "size": "Large", "price": 190.0 }
+    ]
   },
   {
     "id": "8",
@@ -88,7 +98,12 @@
     "image": "../../assets/chicken-burger.png",
     "source": "KFC",
     "category": "Burger",
-    "description": "Chicken Burger is a delicious choice featuring a crispy, golden-fried chicken patty layered with fresh lettuce and creamy mayonnaise, all tucked into a soft bun. Its crunchy texture and savory taste make it a fantastic option for chicken lovers seeking a satisfying bite."
+    "description": "Chicken Burger is a delicious choice featuring a crispy, golden-fried chicken patty layered with fresh lettuce and creamy mayonnaise, all tucked into a soft bun. Its crunchy texture and savory taste make it a fantastic option for chicken lovers seeking a satisfying bite.",
+    "sizes": [
+      { "size": "Small", "price": 140.0 },
+      { "size": "Medium", "price": 160.0 },
+      { "size": "Large", "price": 180.0 }
+    ]
   },
   {
     "id": "9",
@@ -97,7 +112,12 @@
     "image": "../../assets/veggie-burger.png",
     "source": "Burger King",
     "category": "Burger",
-    "description": "Veggie Burger is a wholesome delight crafted with a flavorful vegetable patty, fresh lettuce, tomatoes, and a light, tangy sauce, served in a toasted bun. Perfect for vegetarians or anyone seeking a lighter, yet tasty burger option packed with fresh ingredients."
+    "description": "Veggie Burger is a wholesome delight crafted with a flavorful vegetable patty, fresh lettuce, tomatoes, and a light, tangy sauce, served in a toasted bun. Perfect for vegetarians or anyone seeking a lighter, yet tasty burger option packed with fresh ingredients.",
+    "sizes": [
+      { "size": "Small", "price": 120.0 },
+      { "size": "Medium", "price": 140.0 },
+      { "size": "Large", "price": 160.0 }
+    ]
   },
   {
     "id": "4",
@@ -106,7 +126,14 @@
     "image": "../../assets/berries-yogurt.png",
     "source": "McDonald's",
     "category": "Yogurt",
-    "description": "Berries Yogurt is a delectable dessert made with creamy, smooth yogurt swirled with a medley of sweet and tart mixed berries. This refreshing treat is perfect as a light snack or a guilt-free indulgence, offering a balance of rich creaminess and fruity goodness."
+    "description": "Berries Yogurt is a delectable dessert made with creamy, smooth yogurt swirled with a medley of sweet and tart mixed berries. This refreshing treat is perfect as a light snack or a guilt-free indulgence, offering a balance of rich creaminess and fruity goodness.",
+    "sizes": [
+      { "size": "32", "price": 98.0 },
+      { "size": "48", "price": 110.0 },
+      { "size": "59", "price": 120.0 },
+      { "size": "64", "price": 130.0 },
+      { "size": "96", "price": 150.0 }
+    ]
   },
   {
     "id": "10",
@@ -115,7 +142,14 @@
     "image": "../../assets/strawberry-yogurt.png",
     "source": "Starbucks",
     "category": "Yogurt",
-    "description": "Strawberry Yogurt is a sweet and creamy snack featuring velvety yogurt blended with juicy, ripe strawberries. Its vibrant flavor and smooth texture make it an ideal choice for a refreshing dessert or a quick, satisfying treat any time of the day."
+    "description": "Strawberry Yogurt is a sweet and creamy snack featuring velvety yogurt blended with juicy, ripe strawberries. Its vibrant flavor and smooth texture make it an ideal choice for a refreshing dessert or a quick, satisfying treat any time of the day.",
+    "sizes": [
+      { "size": "32", "price": 95.0 },
+      { "size": "48", "price": 105.0 },
+      { "size": "59", "price": 115.0 },
+      { "size": "64", "price": 125.0 },
+      { "size": "96", "price": 145.0 }
+    ]
   },
   {
     "id": "11",
@@ -124,7 +158,14 @@
     "image": "../../assets/plain-yogurt.png",
     "source": "Jollibee",
     "category": "Yogurt",
-    "description": "Plain Yogurt is a simple yet versatile option, offering creamy, unsweetened yogurt with a smooth, rich texture. Perfect as a standalone snack or paired with fruits and granola, it’s a healthy and customizable choice for those who enjoy pure, classic flavors."
+    "description": "Plain Yogurt is a simple yet versatile option, offering creamy, unsweetened yogurt with a smooth, rich texture. Perfect as a standalone snack or paired with fruits and granola, it’s a healthy and customizable choice for those who enjoy pure, classic flavors.",
+    "sizes": [
+      { "size": "32", "price": 80.0 },
+      { "size": "48", "price": 90.0 },
+      { "size": "59", "price": 100.0 },
+      { "size": "64", "price": 110.0 },
+      { "size": "96", "price": 130.0 }
+    ]
   },
   {
     "id": "12",
@@ -133,7 +174,14 @@
     "image": "../../assets/mango-yogurt.png",
     "source": "KFC",
     "category": "Yogurt",
-    "description": "Mango Yogurt is a tropical treat combining creamy yogurt with the lush, sweet flavor of ripe mangoes. This vibrant dessert delivers a refreshing and exotic taste, making it a perfect choice for a light, flavorful snack or a delightful end to any meal."
+    "description": "Mango Yogurt is a tropical treat combining creamy yogurt with the lush, sweet flavor of ripe mangoes. This vibrant dessert delivers a refreshing and exotic taste, making it a perfect choice for a light, flavorful snack or a delightful end to any meal.",
+    "sizes": [
+      { "size": "32", "price": 100.0 },
+      { "size": "48", "price": 110.0 },
+      { "size": "59", "price": 120.0 },
+      { "size": "64", "price": 130.0 },
+      { "size": "96", "price": 150.0 }
+    ]
   },
   {
     "id": "13",
@@ -142,7 +190,14 @@
     "image": "../../assets/vanilla-cream.png",
     "source": "McDonald's",
     "category": "Cream",
-    "description": "Vanilla Cream is an elegant dessert featuring a rich, velvety cream infused with the delicate flavor of pure vanilla. Its smooth texture and subtle sweetness make it a sophisticated treat, perfect for those who appreciate a classic, indulgent dessert experience."
+    "description": "Vanilla Cream is an elegant dessert featuring a rich, velvety cream infused with the delicate flavor of pure vanilla. Its smooth texture and subtle sweetness make it a sophisticated treat, perfect for those who appreciate a classic, indulgent dessert experience.",
+    "sizes": [
+      { "size": "32", "price": 90.0 },
+      { "size": "48", "price": 100.0 },
+      { "size": "59", "price": 110.0 },
+      { "size": "64", "price": 120.0 },
+      { "size": "96", "price": 140.0 }
+    ]
   },
   {
     "id": "14",
@@ -151,7 +206,14 @@
     "image": "../../assets/chocolate-cream.png",
     "source": "Starbucks",
     "category": "Cream",
-    "description": "Chocolate Cream is a luscious dessert crafted with silky, rich cream blended with decadent chocolate. Its deep, indulgent flavor and creamy texture make it a heavenly treat for chocolate lovers, ideal as a luxurious snack or dessert to satisfy sweet cravings."
+    "description": "Chocolate Cream is a luscious dessert crafted with silky, rich cream blended with decadent chocolate. Its deep, indulgent flavor and creamy texture make it a heavenly treat for chocolate lovers, ideal as a luxurious snack or dessert to satisfy sweet cravings.",
+    "sizes": [
+      { "size": "32", "price": 95.0 },
+      { "size": "48", "price": 105.0 },
+      { "size": "59", "price": 115.0 },
+      { "size": "64", "price": 125.0 },
+      { "size": "96", "price": 145.0 }
+    ]
   },
   {
     "id": "15",
@@ -160,7 +222,14 @@
     "image": "../../assets/strawberry-cream.png",
     "source": "Jollibee",
     "category": "Cream",
-    "description": "Strawberry Cream is a refreshing dessert made with light, fluffy cream infused with the sweet, juicy flavor of fresh strawberries. Its vibrant taste and airy texture make it a delightful treat, perfect for a summery snack or a sweet finish to any meal."
+    "description": "Strawberry Cream is a refreshing dessert made with light, fluffy cream infused with the sweet, juicy flavor of fresh strawberries. Its vibrant taste and airy texture make it a delightful treat, perfect for a summery snack or a sweet finish to any meal.",
+    "sizes": [
+      { "size": "32", "price": 100.0 },
+      { "size": "48", "price": 110.0 },
+      { "size": "59", "price": 120.0 },
+      { "size": "64", "price": 130.0 },
+      { "size": "96", "price": 150.0 }
+    ]
   },
   {
     "id": "16",
@@ -169,7 +238,14 @@
     "image": "../../assets/caramel-cream.png",
     "source": "KFC",
     "category": "Cream",
-    "description": "Caramel Cream is a luxurious dessert featuring smooth, buttery cream swirled with rich, golden caramel. Its indulgent sweetness and creamy consistency create a sophisticated treat, ideal for those seeking a decadent and flavorful dessert experience."
+    "description": "Caramel Cream is a luxurious dessert featuring smooth, buttery cream swirled with rich, golden caramel. Its indulgent sweetness and creamy consistency create a sophisticated treat, ideal for those seeking a decadent and flavorful dessert experience.",
+    "sizes": [
+      { "size": "32", "price": 110.0 },
+      { "size": "48", "price": 120.0 },
+      { "size": "59", "price": 130.0 },
+      { "size": "64", "price": 140.0 },
+      { "size": "96", "price": 160.0 }
+    ]
   },
   {
     "id": "17",
@@ -178,7 +254,12 @@
     "image": "../../assets/espresso.png",
     "source": "Starbucks",
     "category": "Coffee",
-    "description": "Espresso is a bold and robust coffee drink, crafted from finely ground beans brewed under high pressure to deliver a concentrated shot of rich, aromatic flavor. Perfect for coffee purists, it offers a strong, invigorating kick to start your day or boost your energy."
+    "description": "Espresso is a bold and robust coffee drink, crafted from finely ground beans brewed under high pressure to deliver a concentrated shot of rich, aromatic flavor. Perfect for coffee purists, it offers a strong, invigorating kick to start your day or boost your energy.",
+    "sizes": [
+      { "size": "8", "price": 120.0 },
+      { "size": "12", "price": 130.0 },
+      { "size": "16", "price": 140.0 }
+    ]
   },
   {
     "id": "18",
@@ -187,7 +268,12 @@
     "image": "../../assets/latte.png",
     "source": "Starbucks",
     "category": "Coffee",
-    "description": "Latte is a smooth and creamy coffee beverage, combining a shot of bold espresso with steamed milk and a light foam topping. Its balanced flavor and velvety texture make it a comforting choice for coffee lovers seeking a rich yet mellow drink."
+    "description": "Latte is a smooth and creamy coffee beverage, combining a shot of bold espresso with steamed milk and a light foam topping. Its balanced flavor and velvety texture make it a comforting choice for coffee lovers seeking a rich yet mellow drink.",
+    "sizes": [
+      { "size": "8", "price": 130.0 },
+      { "size": "12", "price": 140.0 },
+      { "size": "16", "price": 150.0 }
+    ]
   },
   {
     "id": "19",
@@ -196,7 +282,12 @@
     "image": "../../assets/cappuccino.png",
     "source": "McDonald's",
     "category": "Coffee",
-    "description": "Cappuccino is a perfectly balanced coffee drink, blending equal parts espresso, steamed milk, and frothy foam. Its bold coffee flavor, creamy texture, and airy foam create a classic, satisfying experience for those who enjoy a harmonious coffee beverage."
+    "description": "Cappuccino is a perfectly balanced coffee drink, blending equal parts espresso, steamed milk, and frothy foam. Its bold coffee flavor, creamy texture, and airy foam create a classic, satisfying experience for those who enjoy a harmonious coffee beverage.",
+    "sizes": [
+      { "size": "8", "price": 125.0 },
+      { "size": "12", "price": 135.0 },
+      { "size": "16", "price": 145.0 }
+    ]
   },
   {
     "id": "20",
@@ -205,6 +296,11 @@
     "image": "../../assets/mocha.png",
     "source": "Jollibee",
     "category": "Coffee",
-    "description": "Mocha is an indulgent coffee drink that combines rich espresso with decadent chocolate syrup, steamed milk, and a dollop of whipped cream. Its sweet, chocolatey flavor and creamy texture make it a delightful treat for those craving a luxurious coffee experience."
+    "description": "Mocha is an indulgent coffee drink that combines rich espresso with decadent chocolate syrup, steamed milk, and a dollop of whipped cream. Its sweet, chocolatey flavor and creamy texture make it a delightful treat for those craving a luxurious coffee experience.",
+    "sizes": [
+      { "size": "8", "price": 140.0 },
+      { "size": "12", "price": 150.0 },
+      { "size": "16", "price": 160.0 }
+    ]
   }
 ]

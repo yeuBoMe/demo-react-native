@@ -68,7 +68,7 @@ export const AuthProvider = ({ children }: { children: ReactNode }) => {
         return false;
     };
 
-    const signup = async (name: string, username: string, password: string, address: string = '') => {
+    const signup = async (name: string, username: string, password: string, avatar: string = '', address: string = '') => {
         if (!name.trim() && !username.trim() && !password.trim()) {
             Alert.alert("Notification", "Please fill all fields!");
             return false;
