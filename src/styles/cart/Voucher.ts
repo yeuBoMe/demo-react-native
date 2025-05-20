@@ -8,7 +8,6 @@ const styles = StyleSheet.create({
   header: {
     alignItems: "center",
     justifyContent: "space-between",
-    paddingTop: 6,
     paddingHorizontal: 20,
     paddingBottom: 20,
   },
@@ -29,7 +28,7 @@ const styles = StyleSheet.create({
     height: 30,
     backgroundColor: "white",
     borderRadius: 8,
-    paddingTop: 6,
+    paddingTop: 4,
     paddingLeft: 6,
     marginRight: 10,
   },

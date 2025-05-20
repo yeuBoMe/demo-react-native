@@ -8,7 +8,7 @@ const styles = StyleSheet.create({
   },
   header: {
     alignItems: "center",
-    paddingTop: 30,
+    paddingTop: 35,
     paddingHorizontal: 20,
     paddingVertical: 20,
     backgroundColor: "#FBAE3C",
@@ -31,7 +31,7 @@ const styles = StyleSheet.create({
     height: 30,
     paddingTop: 4,
   },
-    cartBadge: {
+  cartBadge: {
     position: "absolute",
     top: -5,
     right: -5,
@@ -57,7 +57,7 @@ const styles = StyleSheet.create({
     fontSize: 20,
     marginTop: 10,
   },
-  
+
   backButton: {
     width: 30,
     height: 30,
@@ -75,7 +75,7 @@ const styles = StyleSheet.create({
     marginBottom: 10,
     // backgroundColor: "black",
   },
-  
+
   userRow: {
     justifyContent: "space-between",
     flexDirection: "row",
@@ -117,9 +117,7 @@ const styles = StyleSheet.create({
     justifyContent: "space-between",
   },
 
-  cardDecoration: {
-    
-  },
+  cardDecoration: {},
   circle1: {
     position: "absolute",
     top: -50,
@@ -156,9 +154,7 @@ const styles = StyleSheet.create({
     backgroundColor: "#363E3E",
   },
 
-  cardDecoration2: {
-    
-  },
+  cardDecoration2: {},
   circle2_1: {
     position: "absolute",
     top: -50,
@@ -199,36 +195,36 @@ const styles = StyleSheet.create({
     flexDirection: "row",
     justifyContent: "flex-start",
   },
-  
+
   visa: {
     color: "white",
     fontSize: 20,
     fontWeight: "bold",
   },
-  
+
   cardNumberContainer: {
     alignItems: "center", // căn giữa ngang
     marginTop: 10,
   },
-  
+
   cardNumber: {
     color: "white",
     fontSize: 18,
     letterSpacing: 2,
   },
-  
+
   bottomRow: {
     flexDirection: "row",
     justifyContent: "space-between",
   },
-  
+
   namec: {
     color: "white",
     fontSize: 12,
     fontWeight: "bold",
     lineHeight: 18,
   },
-  
+
   exp: {
     color: "white",
     fontSize: 12,
@@ -247,64 +243,61 @@ const styles = StyleSheet.create({
     borderRadius: 10,
     marginHorizontal: 20,
   },
-  
+
   otherTitle: {
     fontSize: 16,
-    fontWeight: '600',
+    fontWeight: "600",
     marginBottom: 12,
   },
-  
+
   paymentOptionCard: {
-    backgroundColor: '#fff',
+    backgroundColor: "#fff",
     borderRadius: 12,
     padding: 16,
     marginBottom: 12,
-    flexDirection: 'row',
-    justifyContent: 'space-between',
-    alignItems: 'center',
+    flexDirection: "row",
+    justifyContent: "space-between",
+    alignItems: "center",
   },
-  
+
   optionLeft: {
-    flexDirection: 'row',
-    alignItems: 'center',
+    flexDirection: "row",
+    alignItems: "center",
   },
-  
+
   optionIcon: {
     width: 70,
     height: 40,
-    resizeMode: 'contain',
+    resizeMode: "contain",
 
     // borderColor: "green",
     // borderWidth: 1,
   },
   iconWithBalance: {
-    alignItems: 'flex-start',  // icon + chữ căn lề trái
-    paddingLeft: 10,           // sát trái nhưng vẫn có tí padding
+    alignItems: "flex-start", // icon + chữ căn lề trái
+    paddingLeft: 10, // sát trái nhưng vẫn có tí padding
   },
   optionBalance: {
     fontSize: 14,
-    color: '#666',
-    textAlign: 'left',
+    color: "#666",
+    textAlign: "left",
   },
   radioOuter: {
     height: 24,
     width: 24,
     borderRadius: 12,
     borderWidth: 2,
-    borderColor: '#FBB040', // màu cam viền ngoài
-    alignItems: 'center',
-    justifyContent: 'center',
+    borderColor: "#FBB040", // màu cam viền ngoài
+    alignItems: "center",
+    justifyContent: "center",
   },
-  
+
   radioInner: {
     height: 12,
     width: 12,
     borderRadius: 6,
-    backgroundColor: '#FBB040', // màu cam vòng tròn bên trong
+    backgroundColor: "#FBB040", // màu cam vòng tròn bên trong
   },
-  
- 
-  
 });
 
 export default styles;

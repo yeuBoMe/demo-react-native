@@ -10,7 +10,7 @@ const styles = StyleSheet.create({
     justifyContent: "space-between",
     alignItems: "center",
     paddingHorizontal: 25,
-    marginTop: 30,
+    marginTop: 35,
     marginBottom: 12,
     // borderWidth: 1,
     // borderColor: "green"

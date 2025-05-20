@@ -8,7 +8,7 @@ const styles = StyleSheet.create({
   },
   header: {
     alignItems: "center",
-    paddingTop: 30,
+    paddingTop: 35,
     paddingHorizontal: 20,
     paddingVertical: 20,
     backgroundColor: "#FBAE3C",
@@ -47,6 +47,12 @@ const styles = StyleSheet.create({
     fontWeight: "bold",
   },
   avatarSmall: {
+    width: 60,
+    height: 60,
+    borderRadius: 60,
+    marginRight: 5,
+  },
+  avatarBig: {
     width: 60,
     height: 60,
     borderRadius: 60,

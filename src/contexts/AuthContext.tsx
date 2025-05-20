@@ -7,6 +7,7 @@ type User = {
     username: string;
     password: string;
     avatar?: string;
+    address?: string;
 };
 
 type AuthContextType = {
@@ -109,7 +110,7 @@ export const AuthProvider = ({ children }: { children: ReactNode }) => {
             return false;
         }
 
-        const newUser: User = { name, username, password, avatar: null };
+        const newUser: User = { name, username, password, avatar: null, address: null };
         await AsyncStorage.setItem(username, JSON.stringify(newUser));
         setUser(newUser);
         return true;

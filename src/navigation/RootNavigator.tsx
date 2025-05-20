@@ -15,7 +15,7 @@ const RootNavigator = () => {
 
     return (
         <Stack.Navigator
-            initialRouteName="Splash"
+            initialRouteName="Main"
             screenOptions={{ headerShown: false }}
         >
             {/* Initial Screens */}

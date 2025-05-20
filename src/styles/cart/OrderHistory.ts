@@ -41,7 +41,7 @@ export const styles = StyleSheet.create({
   },
   header: {
     alignItems: "center",
-    paddingTop: 30,
+    paddingTop: 35,
     paddingHorizontal: 20,
     paddingVertical: 20,
     backgroundColor: "#FBAE3C",

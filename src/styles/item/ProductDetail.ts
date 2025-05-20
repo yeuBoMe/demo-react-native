@@ -11,7 +11,7 @@ const styles = StyleSheet.create({
     alignItems: "center",
     paddingHorizontal: 20,
     paddingVertical: 15,
-    marginTop: 10,
+    marginTop: 20,
   },
   backButton: {
     width: 30,
@@ -40,6 +40,22 @@ const styles = StyleSheet.create({
     width: 30,
     height: 30,
     paddingTop: 4,
+  },
+  cartBadge: {
+    position: "absolute",
+    top: -5,
+    right: -5,
+    backgroundColor: "#FF8C42",
+    borderRadius: 10,
+    width: 18,
+    height: 18,
+    alignItems: "center",
+    justifyContent: "center",
+  },
+  cartBadgeText: {
+    color: "#fff",
+    fontSize: 10,
+    fontWeight: "bold",
   },
   illustration: {
     marginTop: 20,
