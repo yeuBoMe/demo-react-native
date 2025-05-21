@@ -8,6 +8,7 @@ type User = {
     password: string;
     avatar?: string;
     address?: string;
+    balance?: number;
 };
 
 type AuthContextType = {
@@ -17,6 +18,7 @@ type AuthContextType = {
     logout: () => void;
     setUser: React.Dispatch<React.SetStateAction<User | null>>;
     setAvatar: (avatar: string | null) => void;
+    updateBalance: (amount: number) => void;
 };
 
 const AuthContext = createContext<AuthContextType | undefined>(undefined);
@@ -106,11 +108,11 @@ export const AuthProvider = ({ children }: { children: ReactNode }) => {
 
         const existingUser = await AsyncStorage.getItem(username);
         if (existingUser) {
-            Alert.alert("Notification", "Email is already registered!");
+            Alert.alert("Notification", "Email " + username + " is already registered!");
             return false;
         }
 
-        const newUser: User = { name, username, password, avatar: null, address: null };
+        const newUser: User = { name, username, password, avatar: null, address: null, balance: 0 };
         await AsyncStorage.setItem(username, JSON.stringify(newUser));
         setUser(newUser);
         return true;
@@ -128,8 +130,12 @@ export const AuthProvider = ({ children }: { children: ReactNode }) => {
         }
     };
 
+    const updateBalance = (amount: number) => {
+        setUser((prev) => prev ? { ...prev, balance: (prev.balance || 0) - amount } : prev);
+    };
+
     return (
-        <AuthContext.Provider value={{ user, login, signup, logout, setUser, setAvatar }}>
+        <AuthContext.Provider value={{ user, login, signup, logout, setUser, setAvatar, updateBalance }}>
             {children}
         </AuthContext.Provider>
     );

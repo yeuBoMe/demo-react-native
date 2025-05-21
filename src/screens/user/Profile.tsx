@@ -7,7 +7,6 @@ import { useAuth } from '../../contexts/AuthContext';
 import { useCart } from "../../contexts/CartContext"; // Import useCart
 import PaymentScreen from "../cart/Payment";
 
-
 const ProfileScreen = () => {
     const navigation = useNavigation<NavigationProp<TabParamList, "Profile">>();
     const { user } = useAuth();
@@ -39,7 +38,7 @@ const ProfileScreen = () => {
                                 <Ionicons name="cart-outline" size={21} color="#333" />
                                 <View style={styles.cartBadge}>
                                     <Text style={styles.cartBadgeText}>
-                                        {cartItems.length} {/* Hiển thị số lượng sản phẩm */}
+                                        {cartItems.length}
                                     </Text>
                                 </View>
                             </TouchableOpacity>
@@ -87,7 +86,7 @@ const ProfileScreen = () => {
                         style={styles.menuItem}
                         onPress={() => navigation.navigate('Payment')}
                     >
-                        <Feather name="clock" size={20} style={styles.menuIcon} />
+                        <Feather name="credit-card" size={20} style={styles.menuIcon} />
                         <Text style={styles.menuLabel}>Payment</Text>
                         <Feather name="chevron-right" size={20} color="black" style={styles.menuArrow} />
                     </TouchableOpacity>
